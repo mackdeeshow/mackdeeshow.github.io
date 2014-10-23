@@ -1,0 +1,1873 @@
+/*======================================
+The Mackenzie Dylan Show
+======================================*/
+
+
+/* CSS Reset | http://meyerweb.com/eric/tools/css/reset/ | v2.0
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.tablex {
+    margin: 10px;
+    -moz-border-radius : 10px; /* Firefox */
+    -webkit-border-radius : 10px; /* Safari & Chrome */
+    -khtml-border-radius : 10px; /* Linux browsers */
+    border-radius : 10px; /* CSS3 compatible browsers */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    padding: 0px;
+    border-spacing: 0px;
+    overflow: hidden;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    border-collapse: separate;
+    border-spacing: 0;    
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 5px;
+}
+
+.table2 {
+    margin: 10px;
+    -moz-border-radius : 10px; /* Firefox */
+    -webkit-border-radius : 10px; /* Safari & Chrome */
+    -khtml-border-radius : 10px; /* Linux browsers */
+    border-radius : 10px; /* CSS3 compatible browsers */
+    border-spacing: 0px;
+    overflow: hidden;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    border-collapse: separate;
+    padding: 5px;
+}
+
+.side-table {
+    align: top;	
+    margin: 10px;
+    -moz-border-radius : 10px; /* Firefox */
+    -webkit-border-radius : 10px; /* Safari & Chrome */
+    -khtml-border-radius : 10px; /* Linux browsers */
+    border-radius : 10px; /* CSS3 compatible browsers */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-spacing: 0px;
+    overflow: hidden;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    padding: 15px;
+    width: 320px;
+}
+
+.TableHeaderFooter
+{
+
+    background: #eeeeee; /* Old browsers */
+        background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+        overflow: hidden;
+        
+}
+
+/* General Styles
+-------------------------------------------------------------- */
+html {
+	font-size: 100.01%;
+}
+body {
+	font-family: Times New Roman Bold, Courier New, Arial;													/* Line Change 001: Amended (Removed Muli font) */
+	font-size: 1.0em;														
+	border: 0;
+	color: black;															/* Line Change 002: Amended from #111 (Sets default font colour) */
+	background: white;														/* Line Change 003: Amended from #eee to match Wrapper background colour, but don't actually know what this does */	
+}
+.innerbody {
+	font-family: Arial, Verdana;													/* Line Change 001: Amended (Removed Muli font) */
+	font-size: 1.0em;														
+	border: 0;
+	color: #222021;															/* Line Change 002: Amended from #111 (Sets default font colour) */
+    background: #eeeeee; /* Old browsers */
+/*    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+/*    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+/*    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+/*    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+/*    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+/*    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+														/* Line Change 003: Amended from #eee to match Wrapper background colour, but don't actually know what this does */	
+}
+
+/* Links */
+a, a:link, a:visited{
+	color: #222021 !important;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF6128 !important;
+	text-decoration: none;														/* Line Change XXX: Amended from underline (Removes decoration for body links on hover) */
+}
+a:active {
+	color: #A22228 !important;
+	text-decoration: none;														/* Line Change XXX: Amended from underline (Removes decoration for body links on hover) */
+}
+
+
+/* Form Elements */
+input, textarea {
+	padding: 0.7em;
+	background: #fff;
+	border: 1px solid #ccc;
+	font-size: 1.0em;
+	color: #333;
+	font-family: Arial, Verdana;													/* Line Change 004: Amended (Removed Muli font) */					
+}
+input[type="submit"] {
+	border: none;
+	color: #fff;
+	background: #ff6128;
+}
+input[type="submit"]:hover {
+	background-color: #303030;
+	cursor: pointer;
+}
+
+/* Clearing Floats */
+.clearfix:before, .clearfix:after {  
+	content: " ";
+	display: table;  
+}  
+.clearfix:after {  
+	clear: both;
+}  
+.clearfix {
+    *zoom: 1; /* For IE 6/7 only */  
+}
+
+/* Make Form Elements responsive */
+input, textarea, select {
+	max-width: 100%;
+}
+
+.my-read-more {																/* Line Change XXX: NEW (Format 'Continue Reading' Read More Text) */
+	color: #5CA8D9;															/* Line Change XXX: NEW */
+	font-size: 0.75em;														/* Line Change XXX: NEW */
+	font-weight: bold;														/* Line Change XXX: NEW */
+	line-height: 3em;														/* Line Change XXX: NEW */
+	text-decoration: none;														/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW */
+
+.my-read-more:hover {															/* Line Change XXX: NEW (Formats 'Continue Reading' Read More Text on Hover) */
+	color: #F29B06;															/* Line Change XXX: NEW */
+	text-decoration: none;														/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW */
+
+/* Basic Structure 
+-------------------------------------------------------------- */
+#wrapper {
+	width: 100%;
+	margin: 0;
+	background-color: #222021;													/* Line Change 004: NEW (Changes background screen colour but now only visible against "Menu Background" (Banner-Menu) & "Featured Image" (Banner-Pages-Posts) graphics) */
+}
+#header-wrap {
+	background: #fff;
+	display: none;															/* Line Change 005: NEW (Stops header section from being displayed above navigation menu) */
+}
+#header {
+	padding: 3em 2em;														
+}
+
+#main-panel {																/* Line Change XXX: NEW (New ID container to set background for Content & Sidebar after Header & Banner Images) */
+	width: 100%;															/* Line Change XXX: NEW */	
+	background-color: #2d2b2c;													/* Line Change 006: NEW (Sets background graphic for Content & Sidebar below Menu Images & Page/Post Images) */
+	padding-top: 2em;														/* Line Change 007: NEW (Adds clear space between top of background graphic and Content & Sidebar panels) */
+	margin-top: 2em;														/* Line Change 008: NEW (Lowers background graphic to create space below Banner Images (Menu & Pages/Posts) and Main Content & Sidebar Panels) */
+}																	/* Line Change XXX: NEW (Closes Main Panel ID) */
+
+#wrap {
+	clear: both;
+}
+#content {
+	float: left;
+	width: 64%;															/* Line Change 010: Amended from 70% (Reduces width of main Content Area after padding-left to align with right margin of Featured Image) */
+	max-width: 845px;														/* Line Change XXX: NEW (Prevents Content Panel becoming too wide) */
+	padding: 0;															/* Line Change 011: Amended from 'Padding-Right: 2em' so Images & Text are flush with Menu, Page Titles & Banner Images) */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 0.9em;														/* Line Change 009: Amended from 1.0em (Reduces default text size in main content panel & sidebar but not header of blog post excerpts) */
+/*	text-align: justify;			*/											/* Line Change XXX: NEW (1/2 of code to justify text - but commented out. Code retained for handy reference) */
+/*	text-justify: distribute; 		*/											/* Line Change XXX: NEW (2/2 of above code needed to justify text - but commented out as above) */
+}
+#sidebar {
+	margin-left: 68%;														/* Line Change XXX: Amended from 70% (68% shifts Sidebar left of Content Panel) */
+	width: 32%;															/* Line Change XXX: Amended from 30% */
+	max-width: 475px;														/* Line Change XXX: NEW */
+	padding: 0;															/* Line Change 016: NEW (Adds padding around Sidebar to match Content Area padding) */
+	font-size: 0.9em;														/* Line Change 009: NEW (Sets default text size across entire Sidebar) */
+	background-repeat: repeat;													/* Line Change XXX: NEW */
+	border-bottom: solid #2D2B2C 20px;												/* NEW */
+}
+.container {																/* NOTE: Everything sits in here (Header, Navigational Menu, Page & Post Title Headings, Menu & Featured Images, Main Panel, Content, Sidebar & Footer) */
+	max-width: 1320px;
+	width: 90%;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Page Header */
+#page-header-wrap{
+}
+#page-header {
+	padding: 1em 0 0.5em;														/* Line Change 018: Amended from 1em 1em 05.em then 1em 0 0.5em (Removes left & right padding from header area so Featured Images & Menu Images align with container without need for margin correction) */
+}
+#page-header .page-title, #page-header .archive-title {
+	color: #ffb933;															/* Line Change XXX: Amended from #fff (Not sure what this does though?) */	
+	font-size: 10em;														/* Line Change 019: Amended from 2.8em (Supposedly controls font-size of Page Title Headings ... but 10em. Rally???) */
+	line-height: 1.3em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.page-title {																/* Line Change 020: NEW (Stand-alone class to control Menu. Page & Post title headings below Menu Navigation Header) */
+	font-size: 1em;															/* Line Change 021: NEW (Sets font size of Menu, Page & Post title headings) */
+	color: #C0C0C0;															/* Line Change 022: NEW (Sets font colour of Menu, Page & Post title headings to off-white) */
+	width: 100%;															/* Line Change 023: NEW (Ensure Menu, Page & Post title headings span entire width of container) */
+	border-bottom: 1px #393939 solid;												/* Line Change 024: NEW (Lower Tramlines for Page/Post Heading Title) */
+	border-top: 1px #393939 solid;													/* Line Change 025: NEW (Upper Tramlines for Page/Post Heading Title) */
+	padding-bottom: 1em;														/* Line Change 026: NEW (Creates space between tramlines and Page/Post Heading Title) */
+	padding-top: 1em;														/* Line Change 027: NEW (Creates space between tramlines and Page/Post Heading Title) */
+	margin-left: auto;														/* Line Change 028: NEW (1/2 of code to centre Page/Post Heading Title) */
+	margin-right: auto;														/* Line Change 029: NEW (2/2 of code to centre Page/Post Heading Titles as above) */
+	text-align: left;														/* Line Change 030: NEW (Hopefully stops Page Heading Title from being centred) THINK THIS CAN BE REMOVED */
+	margin-top: 120px;														/* Line Change 031: NEW (Lowers Page Title Heading below Navigation Menu Headings & Search Box) */
+	margin-bottom: 1.3em;														/* Line Change 032: NEW (Adds bottom margin so Featured Image shown in Banner ID is visible fully) */	
+	font-weight: bold;														/* Line Change 033: NEW (Controls font weight of Makes Menu, Page & Post Heading Titles) */
+	}																/* Line Change 034: NEW (Closes new Page Title Class) */	
+
+.subtitle {																/* Line Change 035: NEW (Class created to display Menu/Page/Post subtitles in different colour in Page Heading) */
+	color: #716F6F;															/* Line Change 036: NEW (Sets font colour for subtitle in Page Heading) */
+	padding-left: 0.5em;														/* Line Change XXX: NEW (Forces gap between end of Menu/Page/Post Title & start of Subtitle in Page Header, Sidebar & Blog Index listing) Was 0.2em */
+}																	/* Line Change 037: NEW (Closes new Subtitle class) */
+	
+#page-header .archive-title span{
+	color: #eee;
+	font-style: italic;
+}
+
+/* Navigation Menu
+-------------------------------------------------------------- */
+#mainnav-icon {
+	display: none;
+}
+
+#navi-wrap {
+	background: url(branding/background-header.png);										/* Line Change 039: Amended from #ddd (Sets Background Graphic for Navigation Menu Header) */
+	position: fixed;														/* Line Change 040: NEW (Makes Background Graphic for header & its contents - Logo, Menu Links & Sidebar - static) */	
+	height: 190px;															/* Line Change 041: NEW (Makes Background Graphic display at full/original height to allow for Post/Page Title & Tramlines) */	
+	width: 100%;															/* Line Change 042: NEW (Makes Background Graphic span entire width of screen)
+} 
+
+#mainnav {
+	font-family: Arial, Verdana;													/* Line Change 043: Amended (Removed Muli font) */	
+}
+
+.website-logo {																/* Line Change XXX: NEW (New class created to control placement of website logo in header) */
+	float: left;															/* Line Change XXX: NEW (Aligns logo in header to be flush with Page Titles, tramlines & Images etc. Menu Links & Sidebar appear to the right) */
+}																	/* Line Change XXX: NEW (Closes new class for website logo in header) */
+
+#mainnav-menu {
+	float: left;															/* Line Change XXX: NEW (Forces Menu Links in Navigational Header to appear AFTER website logo) */	
+	list-style-type: none;
+	list-style-position: outside;
+	position: relative;
+}
+#mainnav-menu li{
+	float:left;
+	position:relative;
+	margin: 0 0;															/* Line Change 044: Amended from 0 1em (Aligns Navigation Menu Panel so flush with Main Content Area) */
+}
+#mainnav-menu a{
+	display: block; 
+	padding: 3.4em 0 0 2.5em;													/* Line Change 045: Amended from 1.5em 0.5em (Aligns Navigation Menu Headings with Main Content Area) */		
+	text-decoration: none;
+	font-size: 0.8em;														/* Line Change 046: Amended from 1.1em (Reduces font size of Navigation Menu Heading Links) */	
+	font-weight: bold;
+	text-transform: uppercase;													/* Line Change 047: NEW (Capitalises Navigation Menu Headings while leaving actual URL in lowercase) */
+	height: 75px;															/* Line Change 048: NEW (Pushes Page Heading Title down) */
+}
+#mainnav-menu a:link, #mainnav-menu a:visited{
+	color: #424242;															/* Line Change 050: Amended from #333 (Sets default colour of Navigation Menu Heading Links) */
+	text-decoration: none;
+}
+#mainnav-menu a:hover {
+	color: #F29B06;															/* Line Change 051: Amended from #FF6128 (Controls colour of Navigation Menu Heading Links on hover) */
+}
+#mainnav-menu li.current_page_parent a, #mainnav-menu li.current-menu-item a {								/* Line Change 052: NEW (Added 'parent' bit so 'BLOG' menu heading is highlighted when posts are displayed) */
+	text-decoration: none; 														/* Line Change 053: NEW (Removes underline from active/current menu heading) */
+        color: #6C6C6C; 														/* Line Change 054: NEW (Sets colour for 'BLOG' heading to show it is active when posts on displayed) */
+}
+
+#mainnav-menu li.current_page_parent a:hover {												/* Line Change 055: NEW (Restores color change to current menu heading on hover) */
+	text-decoration: none; 														/* Line Change 056: NEW (Removes underline from active/current menu heading) */
+        color: #F29B06; 														/* Line Change 057: NEW (Sets colour for 'BLOG' heading to show it is active when posts on displayed) */
+}
+
+#mainnav-menu li.current-page-ancestor a, #mainnav-menu li.current-menu-item a {							/* Line Change 058: NEW (Added 'parent ancestor' bit so menu heading hierarchy is highlighted) */
+	text-decoration: none; 														/* Line Change 059: NEW (Removes underline from active/current menu heading) */
+        color: #6C6C6C; 														/* Line Change 060: NEW (Sets colour for 'BLOG' heading to show it is active when posts on displayed) */
+}
+
+#mainnav-menu li.current-page-ancestor a:hover {											/* Line Change 061: NEW (Restores color change to current menu heading on hover) */
+	text-decoration: none; 														/* Line Change 062: NEW (Removes underline from active/current menu heading) */
+        color: #F29B06; 														/* Line Change 063: NEW (Sets colour for 'BLOG' heading to show it is active when posts on displayed) */
+}
+
+
+/* Widget Styling
+-------------------------------------------------------------- */
+.widget {
+	margin-bottom: 0;														/* Line Change XXX: Amended from 2em */
+	padding-bottom: 2em;														/* Line Change XXX: NEW */
+	color: #222;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	background-color: #2d2b2c;													/* Line Change XXX: NEW (Colour matches Widget Area in Sidebar with Container to hide Sidebar background) */
+}
+.widgettitle {
+	font-family: Arial;														/* Line Change 064: Amended (Removed Cabin & Tahoma fonts) */
+	font-size: 1.0em;
+	background: #222021;														/* Line Change 065: Amended from #eee (Controls background colour of Sidebar Headings) */
+	color: #716F6F;															/* Line Change 066: Amended from #333 (Sets font colour for Sidebar Headings) */
+	padding: 0.8em 1em;
+	margin-bottom: 1em;
+}
+.widget .textwidget {
+	line-height: 1.5em;
+}
+.widget .textwidget p {
+	margin-bottom: 1em;
+}
+.widget ul {
+	padding: 0;															/* Line Change 067: Amended from 0 1em (Makes Sidebar Links flush with background panel of Sidebar Headings) */
+	line-height: 1.5em;
+}
+.widget ul {
+}
+.widget ul .children {
+	padding: 0;
+	margin: 0.5em 0 0.5em 0;													/* Line Change XXX: Amended from 0.5em 0 05em 1em (to remove indent from listings in Sidebar) */
+}
+
+.widget a:link, .widget a:visited, .widget a:active {											/* Line Change 068: Amended (Now includes  a:active which used to be below) */
+	text-decoration: none;
+	color: #4d4d4d;															/* Line Change 069: Amended from #ff6128 (Controls the colour of links in Sidebar) */
+	font-weight: normal;														/* Line Change 070: NEW (Stops links in Sidebar becoming bold on click) */
+}
+
+.widget a:hover, .widget a:hover span {													/* Line Change 071: Amended (a:active removed and put above and span added) */
+	text-decoration: none;														/* Line Change 072: Amended from underline (Removes annoying underline for Sidebar links on hover) */
+	color: #F29B06;															/* Line Change 073: NEW (Sets orange colour of Sidebar links on hover) */
+}
+.widget img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+a span:hover {																/* Line Change XXX: NEW */
+	text-decoration: none;														/* Line Change XXX: NEW */
+	color: #F29B06;															/* Line Change XXX: NEW (Sets orange colour of subtitle links in Sidebar on hover) */
+}																	/* Line Change XXX: NEW (Closes new class for subtitle links in Sidebar) */
+
+.widget-listing-panel {															/* Line Change XXX: NEW (New container for Blog Post listings in Sidebar) */
+	height: auto;															/* Line Change XXX: NEW */
+	margin-bottom: 8.7%;
+	width: 100%;
+																
+}																	/* Line Change XXX: NEW */
+
+.widget-listing-thumbnail {
+	float: left;
+	margin-right: -7%; 
+	width: 40%;
+	filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+/*	filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); */
+}
+
+.widget-listing-thumbnail:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+.widget-subtitle {															/* Line Change XXX: NEW (Class created for Blog Post Subtitles in Sidebar) */
+	color: #716F6F;															/* Line Change XXX: NEW (Sets font colour for subtitle in Page Heading) */
+	display: block;
+	margin-top: -0.3em;
+}																	/* Line Change XXX: NEW (Closes new Subtitle class) */
+	
+.widget-pages-listing {															/* Line Change XXX: NEW (New container for Blog Post listings in Sidebar) */
+	height: auto;															/* Line Change XXX: NEW */
+	margin-bottom: 8.7%;
+	width: 100%;															
+	display: block;
+	float: left;
+}																	/* Line Change XXX: NEW */
+
+
+/* Custom Widgets
+-------------------------------------------------------------- */
+
+/* Theme Search Widget */
+
+#navsearchform {															/* Line Change 074: NEW (Creates stand-alone Div ID for Formatting Search Box in Header) */
+	display: block;															/* Line Change 075: NEW */
+	position: relative;														/* Line Change 076: NEW */
+	width: 20%;															/* Line Change 077: NEW (Sets width to allow for Logo & Navigation Menu Heading Links) */
+	margin-top: 40px;														/* Line Change 078: NEW (Creates blank space above Search Box so it is lowered to align with Navigation Menu Heading Links) */
+	overflow:hidden;														/* Line Change 079: NEW (Unsure what this does but copied by original searchform ID below) */
+	float: right;															/* Line Change 080: NEW (Places Search Bar on right of Navigation Menu Heading Links) */	
+	height: 20px;															/* Line Change 081: NEW (Reduces height of search bar in Header to make it thinner) */
+	font-size: 0.75em;														/* Line Change 082: NEW (Reduces size of 'Search' text in Search Box) */
+}																	/* Line Change 083: NEW (Closes new Div ID for Search Box in Header) */
+
+#searchform {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+#s {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+	padding: 0.2em 45px 0.7em 0.5em;												/* Line Change 084: Amended from 0.7em 45px 0.7em 0.7em (Raises 'Search' text inside Search Box) */
+	background: #fff;
+	border: 1px solid #ffffff;													/* Line Change XXX: Amended from #ddd (Recolours border to effectively remove it) */
+	font-size: 1.0em;
+	color: #333;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#searchsubmit {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	background: url(branding/search-icon.png) 0 11px no-repeat;
+	border: none;
+	cursor: pointer;
+}
+#searchsubmit:hover {
+	background: url(branding/search-icon.png) -36px 11px no-repeat;
+}
+
+/* Theme Calendar Widget */
+#wp-calendar {
+	margin: 0;
+	width: 100%;
+	color: #444;
+	line-height: 1.6em;
+}
+#wp-calendar th,
+#wp-calendar td,
+#wp-calendar caption {
+	text-align: left;
+}
+#wp-calendar caption {
+	font-style: italic;
+	margin-bottom: 0.1em;
+}
+#wp-calendar th {
+	font-weight: bold;
+	font-size: 0.85em;
+}
+#wp-calendar tfoot tr td {
+	padding-top: 0.5em;
+}
+#wp-calendar #next {
+	padding-right: 0.8em;
+	text-align: right;
+}
+
+iframe[id^='twitter-widget-']{ width:100%;}												/* Line Change 085: NEW (Expands Live Twitter Tweet Feed to full width of Content panel. Removed Margin-Top: 0.9em) */
+
+#twitter-widget-0 { 															/* Line Change XXX: NEW (Expands Live Twitter Feed on Frontpage) */
+      width: 100% !important; 														/* Live Change XXX: NEW (As Above) */
+    }																	/* Line Change XXX: NEW (Closes Twitter Formatting) */
+
+.social-icons-main {															/* Line Change XXX: NEW (New class to control social media icons that appear anywhere in Main Content Panel) */
+	padding-right: 10px;														/* Line Change XXX: NEW (Creates space between icons) */
+}																	/* Line Change XXX: NEW (Closes new class) */
+
+.social-media-sidebar-panel {														/* Line Change XXX: NEW (Creates panel for Social Media Icons + Social Media Text Links in Sidebar) */
+	background: url(branding/social-media-sidebar-background.png);									/* Line Change XXX: NEW */
+	margin-right: 4%;
+	margin-bottom: 4%;
+	width: 30%;															/* Line Change XXX: NEW */
+	min-width: 30%;
+	display: inline-block; 
+}																	/* Line Change XXX: NEW (Closes caption panel) */
+
+.social-media-sidebar-panel-end {													/* Line Change XXX: NEW (Creates panel for Social Media Icons + Social Media Text Links in Sidebar) */
+	background: url(branding/social-media-sidebar-background.png);									/* Line Change XXX: NEW */
+	float: right;
+	width: 30%;															/* Line Change XXX: NEW */
+	min-width: 30%;
+	display: inline-block; 
+}																	/* Line Change XXX: NEW (Closes caption panel) */
+
+.social-media-sidebar-icons {														/* Line Change XXX: NEW (New class to control social media icons that appear anywhere in Sidebar) */
+	padding-right: 5%;
+	margin-bottom: -0.5em; 
+}																	/* Line Change XXX: NEW (Closes new class) */
+
+.mediaLink {
+    display: block;
+}
+
+.mediaPic {
+    float: left;
+    width, height: 60px;
+}
+
+.mediaText {
+    height: 60px;
+    width: 150px;
+    padding-left: 10px;
+    line-height: 60px;
+    background: #242424;
+    color: white;
+    font-family: "Consolas"," Arial";
+    font-size: 18px;
+    float: left;
+}
+
+.sm {
+    margin: 5px;
+    float: left;
+}
+
+/* Posts and Pages
+-------------------------------------------------------------- */
+/* Postmeta */
+.postmeta {
+	color: #333;
+	padding: 0.7em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+.postmeta .sep {
+	padding-left: 0.8em;
+	margin-left: 0.7em;
+	border-left: 1px solid #aaa;
+}
+.type-post .post-edit-link {
+	padding-left: 0.8em;
+	margin-left: 0.6em;
+	border-left: 1px solid #aaa;
+}
+.meta-tags {
+	margin: 1em 0;
+	font-size: 0.9em;
+}
+.meta-tags a {
+	display: inline-block;
+	padding: 0.4em 1em;
+	background: #ff6128;
+	color: #fff;
+	margin: 0.2em;
+	font-size: 0.9em;
+}
+.meta-tags a:link, .meta-tags a:visited {
+	color: #fff;
+}
+.meta-tags a:hover, .meta-tags a:active{
+	background-color: #303030;
+	text-decoration: none;
+}
+
+/* Default Pagination */
+.post-pagination {
+	background: #ddd;
+	background-image: -webkit-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -moz-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -o-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: -ms-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: linear-gradient(#eee 0%, #ddd 100%);
+	padding: 0;
+	font-size: 0.9em;
+}
+.post-pagination span a {
+	display: inline-block;
+	margin: 0;
+	padding: 0.8em 1.2em;
+	color: #fff;
+	background: #5CA8D9;														/* Line Change XXX: Amended from FF6128 (Default colour for Older/Newer Posts Pagination Link Button) */
+	font-weight: normal;														/* Line Change XXX: NEW (Stops Older/Newer Posts Pagination Link Button becoming bold on click) */
+}
+.post-pagination a:hover {
+	background: #F29B06;														/* Line Change XXX: Amended from #303030 (Changes Older/Newer Posts Pagination Link Button on hover) */
+	text-decoration: none;
+	font-weight: normal;														/* Line Change XXX: NEW (Stops Older/Newer Posts Pagination Link Button becoming bold on click) */
+}
+.post-pagination-alignleft {
+	float: left;
+}
+.post-pagination-alignright {
+	float: right;
+}
+
+/* Pagination with WP-Pagenavi plugin */
+.wp-pagenavi {
+	float: left;
+	width: 100%;
+	padding: 0;
+	background: #ddd;
+	background-image: -webkit-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -moz-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -o-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: -ms-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: linear-gradient(#eee 0%, #ddd 100%);
+}
+.wp-pagenavi .pages {
+    float: right;
+	padding: 0.8em 1.2em;
+}
+.wp-pagenavi a {
+    margin: 0;
+	display: inline-block;
+	padding: 0.8em 1.2em;
+    text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+.wp-pagenavi a:hover {
+	color: #fff;
+	background: #303030;
+}
+.wp-pagenavi .current {
+    display: inline-block;
+	margin: 0;
+	padding: 0.8em 1.2em;
+    background-color: #ff6128;
+    color: #fff;
+	font-weight: bold;
+}
+
+/* Text Elements
+-------------------------------------------------------------- */
+.entry {
+	line-height: 1.3em;														/* Line Change 087: Amended from 1.6em (Reduces default text size) */
+	margin: 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.entry p, .comment p {
+	margin: 0 0 1.5em 0;
+}
+.entry h1, .comment h1,
+.entry h2, .comment h2,
+.entry h3, .comment h3,
+.entry h4, .comment h4,
+.entry h5, .comment h5,
+.entry h6, .comment h6 {
+	color: #C0C0C0;															/* Line Change XXX: Amended from 222 (Changes ALL Headline font-colors) */
+	font-weight: bold;
+	line-height: 1.0em;
+	margin: 1.2em 0 0.3em;
+}
+.entry h1, .comment h1 {
+	font-size: 3.0em;
+}
+.entry h2, .comment h2 {
+	font-size: 2.25em;
+}
+.entry h3, .comment h3 {
+	font-size: 1.1em;															/* Line Change XXX: Amended to reduce default size of H3 headings (which are my sub-headings within posts/pages) */
+}
+.entry h4, .comment h4 {
+	font-size: 1.25em;
+}
+.entry h5, .comment h5 {
+	font-size: 1.125em;
+	margin: 1.3em 0 0;
+}
+.entry h6, .comment h6 {
+	font-size: 1.0em;
+	margin: 1.3em 0 0;
+}
+.entry ul, .comment ul{
+	list-style: square inside;
+	margin: 0 0 1.5em 2em;
+}
+.entry ol, .comment ol{
+	list-style: decimal inside;
+	margin: 0 0 1.5em 2em;
+}
+.entry ol ol, .comment ol ol{
+	list-style: upper-alpha inside;
+}
+.entry ol ol ol, .comment ol ol ol{
+	list-style: lower-roman inside;
+}
+.entry ol ol ol ol, .comment ol ol ol ol{
+	list-style: lower-alpha inside;
+}
+.entry ul ul, .comment ul ul,
+.entry ol ol, .comment ol ol,
+.entry ul ol, .comment ul ol
+.entry ol ul, .comment ol ul {
+	margin-bottom: 0.2em;
+}
+dl {
+	margin: 1em 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+big, .big_tag {
+	font-size: 1.3em;
+}
+ins {
+	padding: 1px 2px;
+	background: #ffa;
+	text-decoration: none;
+}
+code, pre {
+	padding: 3px 8px;
+	margin: 0 1px;
+	background: #eeeeee;
+	color: #222;
+	font-size: 0.9em;
+	font-family: Monospace, "Courier New", Courier;
+	overflow: auto;
+	line-height: 1.0em;
+}
+del, strike, s{
+	text-decoration: line-through;
+}
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+small {
+	font-size: 0.7em;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+	font-size: 0.8em;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+.entry var, .entry kbd, .entry tt, .entry .tt_tag {
+	font-size: 1.1em;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+blockquote {
+	background:#f5f5f5;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 0;
+	padding: 0.8em 1.5em;
+}
+blockquote p {
+	display:inline;
+}
+blockquote cite {
+	display: block;
+	margin: 0.5em 0 0 0.5em;
+	color: #777;
+}
+.entry table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+	margin: 1em 0;
+	text-align: left;
+	width: 100%;
+}
+.entry tr th,
+.entry thead th {
+	background: #e5e5e5;
+	font-weight: bold;
+	padding: 0.2em 1em;
+}
+.entry tr td {
+	border-top: 1px solid #ddd;
+	padding: 0.2em 1em;
+}
+.entry tr.alternate td {
+	background: #f5f5f5;
+}
+
+.page-published-date {															/* Line Change XXX: NEW (New class to style Published Date at end of Pages but not used on Menu Pages) */
+	color: #6a6a6a;															/* Line Change XXX: NEW (Sets font colour of Published Date at end of Pages) */
+	font-size: 0.8em;														/* Line Change XXX: NEW (Sets Published Date font size )*/
+	line-height: 1.4em;														/* Line Change XXX: NEW (Sets line spacing for Published Date at end of Pages) */
+}																	/* Line Change XXX: NEW (Closes new class for Published Date formatting) */
+
+.preamble-box {																/* Line Change XXX: NEW (New class to contain Preamble Flash and Preamble Text on Pages/Posts where required) */
+	border-bottom: 1px solid #393939;												/* Line Change XXX: NEW (Sets font color) */
+	width: 100%;															/* Line Change XXX: NEW (Allows Preamble Box to span entire width of Content container) */
+	height: auto;															/* Line Change XXX: NEW (Not sure this works, but allows Preamble Box height to adjust according to length of Preamble Text) */	
+	margin-bottom: 2em;														/* Line Change XXX: NEW (Supposed to create space between bottom of Preamble Box and start of actual article text) */
+	margin-bottom: 3%;														/* Line Change XXX: NEW (Supposed to create space between bottom of Preamble Box and start of actual article text) */
+	padding-bottom: 3%;														/* Line Change XXX: NEW (Supposed to create space between bottom of Preamble Text and Bottom Border of Preamble Box) */
+} 																	/* Line Change XXX: NEW (Closes new Preamble Box class) */	
+
+.preamble-flash {															/* Line Change XXX: NEW (New class to format Preamble Flash/Info Icon) */
+	background-repeat: repeat;													/* Line Change XXX: NEW (Probably not needed if we switch from red background colour to Info Icon) */
+	width: 4%;															/* Line Change XXX: NEW (Sets default width for Preamble Flash/Info Icon in relation to Content container) */ 
+	max-width: 30px;														/* Line Change XXX: NEW (Prevents Preamble Flash/Info Icon from stretching beyond original dimensions of PNG image) */
+	padding: 0;															/* Line Change XXX: NEW (Not sure this is needed) */
+	margin-bottom: 1em;														/* Line Change XXX: NEW (Supposed to create space below bottom of Preamble Flash/Info Icon and Preamble Box bottom-border) */ 
+}																	/* Line Change XXX: NEW (Closes new class for Preamble Flash/Info Icon formatting) */	
+
+.preamble-text {															/* Line Change XXX: NEW (New Class to format introductory Preamble Text where required) */
+	color: #6a6a6a;															/* Line Change XXX: NEW (Sets font colour of Preamble Text) */
+	float: right;															/* Line Change XXX: NEW (Floats Preamble Text to right of Preamble Flash/Info Icon) */
+	font-size: 0.8em;														/* Line Change XXX: NEW (Sets font size for Preamble Text) */
+	width: 91%;															/* Line Change XXX: NEW (Sets default width for Preamble Text in relation to Content container) */
+	max-width: 800px;														/* Line Change XXX: NEW (Prevents Preamble Text from over-stretching) */
+	line-height: 1.4em;														/* Line Change XXX: NEW (Sets line spacing for Preamble Text to match that of Featured Image & Sub-Image Captions) */
+	margin-top: -0.5em;														/* Line Change XXX: NEW (Aligns Preamble Text with top of Preamble Flash/Info Icon) */
+	margin-bottom: 1em;														/* Line Change XXX: NEW (Supposed to create space below bottom of Preamble Text and Preamble Box bottom-border to prevent overspill but not sure this works) */	
+}																	/* Line Change XXX: NEW (Closes new class for Preamble Text in Preamble Box) */
+
+
+.external a:link, .external a:visited, .external a:active {										/* Line Change XXX: NEW (Controls External Links in Main Content Area) */
+	text-decoration: none;														/* Line Change XXX: NEW */
+	color: #4d4d4d;															/* Line Change XXX: NEW */
+	font-weight: normal;														/* Line Change XXX: NEW */
+	font-size: 50em;														/* Line Change XXX: NEW (Sets font size for Preamble Text) */
+}
+
+.external a:hover, .external a:hover span {												/* Line Change XXX: NEW */
+	text-decoration: none;														/* Line Change XXX: NEW */
+	color: #F29B06;															/* Line Change XXX: NEW */
+	font-size: 50em;														/* Line Change XXX: NEW (Sets font size for Preamble Text) */
+}
+
+a.body:link,																/* Line Change XXX: NEW (New class for body links in wrapper) */
+a.body:visited,																/* Line Change XXX: NEW */
+a.body:active {			background-color: #464646;										/* Line Change XXX: NEW */
+				border: solid 1px #464646;										/* Line Change XXX: NEW */
+				color: #a7a7a7;												/* Line Change XXX: NEW */
+				font-family: Arial											/* Line Change XXX: NEW */
+				padding-right: 2px;											/* Line Change XXX: NEW */
+				text-align: left;											/* Line Change XXX: NEW */
+				text-decoration: none;											/* Line Change XXX: NEW */
+				white-space: nowrap; }											/* Line Change XXX: NEW */
+
+a.body:hover {			background-color: #2d2b2c;										/* Line Change XXX: NEW */
+				border: solid 1px #464646;										/* Line Change XXX: NEW */
+				color: #F29B06;												/* Line Change XXX: NEW */
+				font-family: Arial											/* Line Change XXX: NEW */
+				padding-right: 2px;											/* Line Change XXX: NEW */
+				text-align: left;											/* Line Change XXX: NEW */
+				text-decoration: none;											/* Line Change XXX: NEW */											
+				white-space: nowrap; }											/* Line Change XXX: NEW */
+
+.body-link-wrapper {		background-color: #464646;										/* Line Change XXX: NEW */
+				border: solid 1px #464646;										/* Line Change XXX: NEW */
+				color: #a7a7a7;												/* Line Change XXX: NEW */
+				font-family: Arial;											/* Line Change XXX: NEW */
+				text-decoration: none;											/* Line Change XXX: NEW */
+				white-space: nowrap; 											/* Line Change XXX: NEW */
+				margin-left: 0.2em;											/* Line Change XXX: NEW */
+				margin-right: 0.5em;											/* Line Change XXX: NEW */	
+				padding-left: 0.2em;											/* Line Change XXX: NEW */
+}
+
+/* Images | Gallery | Videos
+-------------------------------------------------------------- */
+
+#banner-menu {																/* Line Change 090: NEW (Creates new ID container for Menu Images to span full-width but scale-down proportionately on minimise) */
+	width: 100%;															/* Line Change 091: NEW (Sets default width to span entire container width) */
+	max-width: 1320px;														/* Line Change 092: NEW (Sets maximum width for container) */
+	margin-top: 10.9em;														/* Line Change 093: NEW (Drops banner so appears below Page Title Header) */
+}																	/* Line Change 095: NEW (Closes Banner ID container for Featured Image picture + caption panel) */
+
+.menu-image {																/* Line Change XXX: NEW (Creates new class for Menu Images which span full-width on Static Pages) */
+	width: 100%;															/* Line Change XXX: NEW (Limits width of Menu Images to prevent overstretch on smaller screens and on minimise) */
+	max-width: 1320px;														/* Line Change 088: NEW (Sets Max Width for full-width images on Static Pages) */
+	margin-bottom: -2px;														/* Line Change 098: NEW (Removes padding below Menu Image to match settings for Featured Image) */
+	height: auto;															/* Line Change XXX: NEW */
+	padding: 0;															/* Line Change XXX: NEW (To match settings for Content & Sidebar) */
+}																	/* Line Change XXX: NEW (Closes class for Menu Images) */
+
+#banner-pages-posts {															/* Line Change 090: NEW (Creates ID container for Featured Image (wp-post-image) and Caption sit in here) */
+	width: 100%;															/* Line Change 091: NEW (Limits width of container to prevent overstretch on smaller screens or on minimise) */
+	max-width: 1320px;														/* Line Change 092: NEW (Sets maximum width for container) */
+	margin-top: 10.9em;														/* Line Change 093: NEW (Drops banner so appears below Page Title Header) */
+	background: url(branding/background-banner.png);										/* Line Change 094: NEW (Sets background graphic so gridlines appear behind Featured Image & Caption - although only visible behind Caption) */
+}																	/* Line Change 095: NEW (Closes Banner ID container for Featured Image picture + caption panel) */
+
+.wp-post-image  {															/* NOTE: THIS ELEMENT CONTROLS THE FEATURED IMAGE IN PAGES & POSTS */
+	width: 64%;															/* Line Change 096: Amended from 100% (Sets screen ratio for Featured Images to fill proportion of screen allowing remaining area for caption. Equates to approx 845px wide) */ 
+	max-width: 845px;														/* Line Change 097: NEW (Limits width of Featured Images to prevent overstretch on smaller screens and on minimise) */
+	margin-bottom: -2px;														/* Line Change 098: NEW (Removes padding below Featured Image) */
+	height: auto;															/* Line Change XXX: NEW */
+	padding: 0;															/* Line Change XXX: NEW (To match settings for Content & Sidebar so image is flush with left-hand margin) */
+}
+
+
+.featured-image-caption-panel {														/* Line Change 099: NEW (Creates panel for Featured Image Caption) */
+	font-size: 0.75em;														/* Line Change XXX: NEW (Sets default text size for Featured Images captions)*/
+	width: 28%;															/* Line Change 101: NEW (Sets screen ratio for Featured Image Captions to occupy space left after Featured Image) */
+	max-width: 475px;														/* Line Change XXX: NEW (Limits width for caption area to prevent overstretch) */
+	float: right;															/* Line Change 102: NEW (Floats caption area to right of Featured Image) */
+	margin-right: 2%;
+	margin-top: 1%;
+	padding: 2%;															/* Line Change 103: NEW (Creates empty area around Featured Image caption for better spacing) */
+	line-height: 1.4em;														/* Line Change 104: NEW (Sets line spacing for Featured Image caption. 1.3em looks quite good too) */
+	background: #222021;
+}																	/* Line Change 106: NEW (Closes caption panel) */
+
+.featured-image-caption-heading {													/* Line Change 107: NEW (Text formatting for Figure Number which appears above Featured Image Caption) */
+	color: #5CA8D9;															/* Line Change 108: NEW (Sets colour for blue Figure Number on Featured Image) */
+}																	/* Line Change 110: NEW (Closes styling for Featured Image Figure Number) */
+	
+.featured-image-caption-text {														/* Line Change 111: NEW (Text formatting for Featured Image Caption) */
+	color: #6a6a6a;															/* Line Change 112: NEW (Sets colour of text for Featured Image caption) */
+}																	/* Line Change 113: NEW (Closes styling for Featured Image caption text) */
+
+.post-excerpt-panel {															/* Line Change 114: NEW (New container for thumbnail image and post excerpt to sit it) */
+	padding: 0 0 1em 0;														/* Line Change 115: NEW (Creates bottom padding within panel) */
+	border-bottom: solid 1px #393939;												/* Line Change 116: NEW */
+	margin-bottom: 1.8em;														/* Line Change XXX: NEW (Creates separating space below each Page & Post excerpts on Listings Pages) */
+	width: 100%;
+	display: block;
+}																	/* Line Change 118: NEW (Closes excerpt container) */
+
+.post-thumb-image {															/* Line Change 119: NEW (New class to control Thumbnail of Featured Images on Blog index page) */
+	width: 21%;															/* Line Change 120: NEW (Temporary size for testing control of Featured Image Thumbnails) */
+	max-width: 169px;
+	margin-right: 2%;														/* Line Change 121: NEW (Creates clear space between thumbnail image & post title/excerpt) */
+	margin-bottom: 0.6em;
+}																	/* Line Change 122: NEW (Closes new class for Thumbnail of Featured Images) */
+
+.post-excerpt-text-panel {														/* Line Change 123: NEW (Needed to allow Page Title link + excerpt text to align with Featured Image thumbnail) */
+	width: 76%;															/* Line Change 124: NEW */
+	float: right;															/* Line Change 125: NEW */
+}																	/* Line Change 126: NEW (Closes) */
+
+.post-excerpt-title a:link, a:visited, a:active {											/* Line Change 127: NEW (Controls Post Titles used as links in Blog Post Excerpts on Blog (Index) Page) */
+	color: #c0c0c0;															/* Line Change 128: NEW */
+	text-decoration: none;														/* Line Change 129: NEW */
+	font-weight: bold;														/* Line Change 130: NEW (Turns Post Title Links in Blog Post Excerpts BOLD on Blog Index Page) */
+}																	/* Line Change 131: NEW (Closes) */
+
+.post-excerpt-title a:hover, .post-excerpt-title a:hover span {										/* Line Change 132: NEW (Controls Post Titles Links on Hover as above) */
+	color: #F29B06;															/* Line Change 133: NEW */
+	font-weight: bold;														/* Line Change 134: NEW (Turns Post Title Links in Blog Post Excerpts BOLD on Blog Index Page) */
+}																	/* Line Change 135: NEW (Closes) */
+
+.post-thumb-excerpt {															/* Line Change 136: NEW (New class to format post excerpts alongside post excerpt thumbnail) */
+	margin-top: 0.3em;														/* Line Change 137: NEW (Creates gap between Post Title Link & Blog Post Excerpt Text in Blog Index Listing) */ 
+	line-height: 1.3em;														/* Line Change XXX: NEW (Controls line spacing on post excerpts) */
+	text-align: left;														/* Line Change XXX: NEW (1/2 of code to remove justification from Page and Post excerpts) */
+}																	/* Line Change 138: NEW (Closes new class for format post excerpts) */
+
+.page-excerpt-panel {															/* Line Change 114: NEW (New container for thumbnail image and post excerpt to sit it) */
+	padding: 0 0 1em 0;														/* Line Change 115: NEW (Creates bottom padding within panel) */
+	border-bottom: solid 1px #393939;												/* Line Change 116: NEW */
+	margin-bottom: 1.8em;														/* Line Change XXX: NEW (Creates separating space below each Page & Post excerpts on Listings Pages) */
+}																	/* Line Change 118: NEW (Closes excerpt container) */
+
+.page-listing-thumbnail {
+	display: inline;
+	margin-right: 3%;
+	padding-bottom: 1.3%;
+	width: 20.1%;
+/*	background-color: #FFFFFF;*/
+}
+
+.page-listing-thumbnail:hover {
+	filter: none;
+}
+
+.page-excerpt-text-panel {														/* Line Change 123: NEW (Needed to allow Page Title link + excerpt text to align with Featured Image thumbnail) */
+/*	background-color: #FFB933; */
+	float: right;
+	width: 76%;
+}																	/* Line Change 126: NEW (Closes) */
+
+.sub-image-panel {															/* Line Change XXX: NEW (New container class to hold images and captions) */ 
+	border-top: 1px solid #393939;													/* Line Change XXX: NEW */
+	border-bottom: 1px solid #393939;												/* Line Change XXX: NEW */
+	max-width: 845px;														/* Line Change XXX: NEW */
+	margin-bottom: 2em;														/* Line Change XXX: NEW */
+	margin-top: 2em;														/* Line Change XXX: NEW */
+	padding: 1.5em 0 1.3em 0;													/* Line Change XXX: NEW */
+	width: 100%;															/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW (Closes new container class for smaller images and captions) */
+
+.sub-image-file {															/* Line Change XXX: NEW */
+	width: 32%;															/* Line Change XXX: NEW (Was 30% before) */
+	max-width: 272px;														/* Line Change XXX: NEW (Was 250px before) */
+	margin-bottom: 0.1em;														/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW */
+
+.sub-image-caption {															/* Line Change XXX: NEW */
+	color: #6a6a6a;															/* Line Change XXX: NEW */
+	float: right;															/* Line Change XXX: NEW */
+	font-size: 0.8em;														/* Line Change XXX: NEW */
+	width: 65%;															/* Line Change XXX: NEW */
+	max-width: 595px;														/* Line Change XXX: NEW */
+	margin-bottom: 0.1em;														/* Line Change XXX: NEW */
+	line-height: 1.4em;														/* Line Change XXX: NEW (Sets line spacing for Sub-Image captions to match line spacing for Featured Image captions) */
+	text-align: left;														/* Line Change XXX: NEW (Stops caption text being fully justified) */
+}																	/* Line Change XXX: NEW */
+
+.full-panel {																/* Line Change XXX: NEW (New container class to full-width content + caption in tramlines) */ 
+	border-bottom: 1px solid #393939;												/* Line Change XXX: NEW */
+	margin-bottom: 3%;
+	max-width: 845px;														/* Line Change XXX: NEW */
+	padding-bottom: 1.5%;
+	width: 100%;															/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW (Closes new container class for smaller images and captions) */
+
+.full-panel-image {															/* Line Change XXX: NEW */
+	width: 100%;															/* Line Change XXX: NEW */
+	margin-bottom: 1%;
+}																	/* Line Change XXX: NEW */
+
+.full-panel-caption {															/* Line Change XXX: NEW */
+	color: #6a6a6a;															/* Line Change XXX: NEW */
+	font-size: 0.8em;														/* Line Change XXX: NEW */
+	text-align: left;														/* Line Change XXX: NEW (Stops caption text being fully justified) */
+	width: 100%;															/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW */
+
+article .wp-post-image  {
+/*	margin-bottom: 0.5em;		*/												/* NOTE: Controls POST thumbnail images on Listings Pages but not PAGE thumbnail images) */ 		
+}
+.type-page .wp-post-image  {
+	margin-bottom: 0.6em;														/* Line Change XXX: Amended from 1em (Controls bottom margin on PAGE thumbnail images to match POST thumbnail images on Listings Pages) */ 
+	width: 21%															/* Line Change XXX: NEW (Controls PAGE thumbnail images on Listings Pages to match POST thumbnail images) */
+	max-width: 169px;														/* Line Change XXX: NEW (Controls PAGE thumbnail images on Listings Pages to match POST thumbnail images) */
+	margin-right: 2%'														/* Line Change XXX: NEW (Controls PAGE thumbnail images on Listings Pages to match POST thumbnail images) */		
+}
+.entry img {
+	max-width: 100%;
+	height: auto;
+}
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 1em 0;
+}
+.wp-caption-text {
+	margin: 0 !important;
+	padding: 0;
+	font-size: 0.8em;
+	text-align: center;
+}
+.alignleft { 
+	float: left; 
+	display: inline; 
+	margin: 1em 2em 1em 0;
+}
+.alignright	{
+	float: right; 
+	display: inline; 
+	margin: 1em 0 1em 2em;
+}
+.aligncenter {
+	margin: 1em auto; 
+	display: block;
+}
+
+.avatar-container-block-maxi {
+	background-color: #404040;
+	border-top: 1.5em solid #f29b06;
+	display: block;
+	font-size: 1em;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+	padding-bottom: 2.8em;
+	padding-right: 3em;
+	padding-top: 2.25em;
+	text-align: left;
+}
+
+.avatar-container-block-mini {
+	background-color: #404040;
+	border-top: 1em solid #f29b06;
+	display: block;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+	text-align: left;
+}
+
+
+/* Gallery Styling */
+.gallery {
+	margin: 1em auto !important;
+}
+.gallery-item {
+	float: left;
+	margin: 0.7em 0 0 0 !important;
+	padding-right: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.gallery img {
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.gallery-caption {
+	margin-left: 0.3em !important;
+}
+
+/* Make Vidoes responsive */
+embed, iframe, object, video {
+	max-width: 100%;
+}
+
+/* Image.php Navigation */
+#image-nav {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	margin: 1em 0;
+}
+#image-nav span {
+	display: block;
+	margin: 0.5em 0;
+}
+#image-nav .nav-previous {
+	float: left;
+}
+#image-nav .nav-next {
+	float: right;
+}
+#image-nav .nav-previous a, #image-nav .nav-next a {
+	padding: 0.3em 0.6em;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+#image-nav .nav-previous a:hover, #image-nav .nav-next a:hover {
+	background: #eaeaea;
+}
+
+
+.fade-image {
+	display: block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	}
+	
+	.fade-image-a,
+	.fade-image b {
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+		
+	.fade-image-a {
+		z-index: 5;
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+   		}	
+		
+		.fade-image-a:hover {
+			opacity: 0;
+			}
+
+#video-banner {																/* Line Change XXX: NEW */
+	width: 100%;															/* Line Change XXX: NEW */
+	max-width: 1320px;														/* Line Change XXX: NEW */
+	margin-top: 10.9em;														/* Line Change XXX: NEW */
+	background: url(branding/background-banner.png);										/* Line Change XXX: NEW */
+}																	/* Line Change XXX: NEW */
+
+.featured_video_plus {
+/*	width: 100%;	*/														/* Line Change XXX: NEW */ 
+	max-width: 845px;														/* Line Change XXX: NEW */
+/*	margin-bottom: -2px;	*/													/* Line Change XXX: NEW */
+	height: auto;															/* Line Change XXX: NEW */
+	padding: 0;															/* Line Change XXX: NEW */
+}
+	
+.featured-video-caption-panel {														/* Line Change 099: NEW (Creates panel for Featured Image Caption) */
+	font-size: 0.75em;														/* Line Change XXX: NEW (Sets default text size for Featured Images captions)*/
+	width: 28%;															/* Line Change 101: NEW (Sets screen ratio for Featured Image Captions to occupy space left after Featured Image) */
+	max-width: 475px;														/* Line Change XXX: NEW (Limits width for caption area to prevent overstretch) */
+	float: right;															/* Line Change 102: NEW (Floats caption area to right of Featured Image) */
+	margin-right: 2%;
+	margin-top: 1%;
+	padding: 2%;															/* Line Change 103: NEW (Creates empty area around Featured Image caption for better spacing) */
+	line-height: 1.4em;														/* Line Change 104: NEW (Sets line spacing for Featured Image caption. 1.3em looks quite good too) */
+	background: #222021;
+}																	/* Line Change 106: NEW (Closes caption panel) */
+
+.featured-image-caption-heading {													/* Line Change 107: NEW (Text formatting for Figure Number which appears above Featured Image Caption) */
+	color: #5CA8D9;															/* Line Change 108: NEW (Sets colour for blue Figure Number on Featured Image) */
+}																	/* Line Change 110: NEW (Closes styling for Featured Image Figure Number) */
+	
+.featured-image-caption-text {														/* Line Change 111: NEW (Text formatting for Featured Image Caption) */
+	color: #6a6a6a;															/* Line Change 112: NEW (Sets colour of text for Featured Image caption) */
+}																	/* Line Change 113: NEW (Closes styling for Featured Image caption text) */
+
+
+
+
+
+/* Comments
+-------------------------------------------------------------- */
+#comments .comments-title, #respond #reply-title {
+	font-weight: normal;
+	font-size: 1.0em;
+	color: #716F6F;															/* Line Change 139: Amended from #fff (Sets font colour for 'Leave a Reply' tab to match font colour for Sidebar link) */ 	
+	background: #222021;														/* Line Change 140: Amended from #FF6128 (Changes background colour of 'Leave a Reply' tab to match background headings in Sidebar) */
+	padding: 1em;
+	margin-bottom: 1em;
+}
+.commentlist {
+	display: block;
+	margin: 2em 0;
+}
+.commentlist .comment{
+	display: block;
+	margin: 2em 0 0;
+	list-style: none;
+	line-height: 1.5em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.commentlist .comment .avatar {
+	float: left;
+	margin-right: 1.5em;
+}
+.commentlist .comment .avatar:after {
+	clear: both;
+}
+.comment-author {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	background: #ddd;
+	background-image: -webkit-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -moz-linear-gradient(#eee 0%, #ddd 100%); 
+	background-image: -o-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: -ms-linear-gradient(#eee 0%, #ddd 100%);
+	background-image: linear-gradient(#eee 0%, #ddd 100%);
+}
+.comment-author .comment-meta {
+	display: inline-block;
+	font-size: 0.8em;
+	margin: 1em 1.2em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	color: #222;
+}
+.comment-author .fn {
+	display: inline-block;
+	float: left;
+	font-family: Arial;														/* Line Change 141: Amended (Removed Cabin & Tahoma fonts) */
+	font-size: 1.0em;
+	color: #fff;
+	background: #ff6128;
+	padding: 0.8em 1.2em;
+}
+.comment-meta a:link, .comment-meta a:visited, 
+.comment-meta a:active, .comment-meta a:hover {
+	color: #222 !important;
+}
+.comment-author .fn a:link, .comment-author .fn a:visited {
+	color: #fff !important;
+	text-decoration: underline;
+}
+.comment-author .fn a:hover, .comment-author .fn a:active {
+	text-decoration: none;
+}
+.bypostauthor .fn, .comment-author-admin .fn{
+	background: #333;
+}
+#comments .children {
+	margin-left: 2em;
+	padding-left: 1em;
+	border-left: 10px solid #ddd;
+}
+.nocomments {
+	color: #444;
+	padding: 1em;
+}
+.commentlist .pingback {
+	display: block;
+	margin: 0.6em 0 0;
+	padding: 0.8em 0 0;
+	border-top: 1px solid #ddd;
+	list-style: none;
+	line-height: 1.3em;
+}
+
+/* Comment Pagination */
+.comment-pagination {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding: 0 1em;
+	font-size: 0.9em;
+}
+.comment-pagination .alignleft {
+	float: left;
+}
+.comment-pagination .alignright {
+	float: right;
+}
+
+/* Comment Form */
+#cancel-comment-reply-link  {
+	color: #fff;
+}
+#respond {
+	margin: 2em 0;
+}
+#commentform p {
+	margin: 1em 0;						
+}
+#commentform input[type="text"], #commentform textarea {
+	display: inline-block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 1em;														/* Line Change 142: NEW (Increases spacing between bottom of 'Comment' text label and white Comment Form) */
+}
+#commentform label {
+	display: block;
+	margin: 0.6em 0 0.2em;
+}
+#commentform #submit {
+	display: block;
+	border: none;
+	margin-top: 1em;
+	margin-bottom: -2em;														/* Line Change 143: NEW (Removes excess padding to align bottom of 'Post Comment' button bottom of content/sidebar divider) */
+	padding: 0.5em 1em;														/* Line Change XXX: Amended from 1em 4em (Controls size of 'Post Comment' button) */	
+	text-decoration: none;
+	color: #fff !important;
+	background: #5CA8D9;														/* Line Change 144: Amended from #FF6128 (Changes background colour of 'Post Comment' button) */
+}
+#commentform #submit:hover {
+	background-color: #F29B06;													/* Line Change XXX: Amended from #303030 (Changes background colour of 'Post Comment' button on hover) */
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Page Templates
+-------------------------------------------------------------- */
+
+/* Fullwidth Template */
+.fullwidth {
+	float: none !important;
+	width: 100% !important;
+	padding: 0 !important;
+}
+
+/* Front Page Template
+-------------------------------------------------------------- */
+
+/* Front Page Image */
+#frontpage-image-wrap {
+	background: #ff6128;
+	padding: 1em 0 6em;
+	margin-bottom: -4em;
+}
+#frontpage-slider-wrap {
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	/* All Slideshow Styles in flexslider.css */
+}
+#frontpage-image-wrap #page-header {
+	padding-top: 2.8em;
+}
+#frontpage-image-wrap #custom-header, #frontpage-individual-image {
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+/* Front Page Intro */
+#frontpage-intro {
+	margin-bottom: 2em;
+	height: 100%;
+	padding: 1.5em;
+	background: #eee;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#frontpage-intro .frontpage-intro-text {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+#frontpage-intro-left {
+	float: left;
+	width: 80%;
+	padding-right: 1.5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#frontpage-intro-button {
+	margin-left: 80%;
+	width: 20%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#frontpage-intro-button a {
+	float: right;
+	display: inline-block;
+	padding: 1em 1.2em;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: #ff6128;
+}
+#frontpage-intro-button a:hover {
+	background-color: #303030;
+	text-decoration: none;
+}
+
+/* Front Page Widgets */
+.frontpage-widgets {
+	clear: both;
+	margin-right: -2em;
+}
+.frontpage-widgets .widget-col-half {
+	float:left;
+	width: 50%;
+	padding-right: 2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.frontpage-widgets .widget-col-third {
+	float:left;
+	width: 33.3333333333333%;
+	padding-right: 2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#frontpage-widgets-one .widget {
+	padding: 1em 2em;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+}
+#frontpage-widgets-one .widget .widgettitle {
+	border: none;
+	color: #fff;
+	background: #ff6128;
+	margin: -1em -2em 1em;
+}
+
+/* Footer
+-------------------------------------------------------------- */
+#footer-wrap {
+	background: #222021;														/* Line Change 145: Amended from #ff6128*/
+	padding-bottom: 0.8em;														/* Line Change 147: Amended from 2em */
+}
+#footer {
+/*	border-top: 2em solid #1a1a1a;					*/								/* Line Change 148: Amended from #fff (Changes colour of white block in footer to match floating Container */
+	padding: 2em 0 1em 0;							
+}
+#footer a:link, #footer a:visited{
+	color: #ddd;
+	text-decoration: underline;
+}
+#footer a:hover, #footer a:active {
+	text-decoration: none;
+}
+#footer #credit-link {
+	float: right;
+	font-size: 0.8em;														/* Line Change 149: Amended from 1em (Reduces font size in Footer) */
+	color: #716F6F;															/* Line Change 150: Amended from #fff (Changes colour of copyright text in footer) */	
+	margin-top: 0.5em;														/* Line Change 151: NEW (Lowers copyright text so its more centred) */
+}
+
+/*============================ MEDIA QUERIES ============================*/
+
+/* Small screens | <1120px */
+@media only screen and (max-width: 70em) {
+	.container {
+		width: 92%;
+	}
+}
+
+/* Tablets (landscape) | <960px */
+@media only screen and (max-width: 60em) {
+	.container {
+		width: 90%;
+	}
+	#header {
+		padding: 2em;
+	}
+	#page-header .page-title, #page-header .archive-title {
+		font-size: 2.5em;
+	}
+	#content {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+	#sidebar {
+		clear: both;
+		margin-left: 0;
+		width: 100%;
+		padding-top: 4em;
+	}
+	#logo {
+		float: none;
+		width: 100%;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	#footer-wrap {
+		padding-bottom: 0;
+	}
+	
+	/* Mobile Navigation */
+	
+	/* Reset */
+	#mainnav-menu li, #mainnav-menu a, #mainnav-menu ul, 
+	#mainnav-menu ul a, #mainnav-menu ul ul, #mainnav-menu li ul ul 
+	{
+		margin: 0;
+		padding: 0;
+		position: static;
+		float: none;
+		display: inline;
+		font-size: 1.0em;
+		border: none;
+		box-shadow: none;
+		background: none;
+		top: 0;
+		left: 0;
+	}
+	#mainnav-menu li:hover ul ul, #mainnav-menu li:hover ul ul ul, #mainnav-menu li:hover ul ul ul ul,
+	#mainnav-menu li:hover ul, #mainnav-menu li li:hover ul, #mainnav-menu li li li:hover ul, #mainnav-menu li li li li:hover ul
+	{
+		display: inline;
+	}
+	
+	#mainnav-icon-wrap {
+		background: #ddd;
+		background-image: -webkit-linear-gradient(#eee 0%, #ddd 100%); 
+		background-image: -moz-linear-gradient(#eee 0%, #ddd 100%); 
+		background-image: -o-linear-gradient(#eee 0%, #ddd 100%);
+		background-image: -ms-linear-gradient(#eee 0%, #ddd 100%);
+		background-image: linear-gradient(#eee 0%, #ddd 100%);
+	}
+	#mainnav-icon {
+		display: block;
+		margin: 0 auto;
+		font-size: 1.1em;
+		font-weight: bold;
+		padding: 1.5em 0.5em;
+		color: #222;
+	}
+	#mainnav-icon:hover {
+		cursor: pointer;
+		text-decoration:  underline;
+	}
+	#mainnav-icon:after {
+		float: right;
+		content: "";
+		width: 32px;
+		height: 30px;
+		background: url(branding/menu-icon.png) no-repeat 50%;
+		margin: -0.5em 0 0 0;
+	}
+	#navi-wrap {
+		background: #ff6128;
+	}
+	#mainnav-menu {
+		width: 100%;
+		display: none;
+		background: #333;
+		padding: 1em;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#mainnav-menu a {
+		display: block;
+		padding: 1em;
+		text-decoration: none;
+		font-size: 1.0em;
+		clear: left;
+		border-top: 1px solid #444;
+	}
+	#mainnav-menu a:link, #mainnav-menu a:visited{
+		color: #fff;
+		text-decoration: none;
+	}
+	#mainnav-menu a:hover {
+		background: #ff6128;
+	}
+	#mainnav-menu ul {
+		float: left;
+		padding: 1em;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#mainnav-menu ul a {
+		display: block;
+		width: 100%;
+		padding: 1em;
+		font-size: 0.9em;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background: #444;
+		margin-bottom: 1px;
+	}
+	#mainnav-menu ul li ul {
+		float: left;
+		padding: 0 0 0 1em;
+		width: 100%;
+		border-top: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#mainnav-menu li.current_page_item a, #mainnav-menu li.current-menu-item a {
+		text-decoration: unerline;
+	}
+	#mainnav-menu li.current_page_item ul li a, #mainnav-menu li.current-menu-item ul li a{
+		text-decoration: unerline;
+	}
+	#mainnav-menu ul li.current_page_item a, #mainnav-menu ul li.current-menu-item a {
+		text-decoration: unerline;
+	}
+	
+	/* Frontpage Intro */
+	#frontpage-intro-left, #frontpage-intro-button {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#frontpage-intro-button a {
+		float: none;
+		margin-top: 0.8em;
+		width: 50%;
+	}
+	
+	/* Frontpage Widgets */
+	#frontpage-widgets-one, #frontpage-widgets-two {
+		margin: 0;
+	}
+	.frontpage-widgets .widget-col-third  {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+}
+
+/* Tablets (portrait) | <800px */
+@media only screen and (max-width: 50em) {
+	.container {
+		width: 92%;
+	}
+	#header {
+		padding: 1.5em;
+	}
+	#logo {
+		margin-bottom: 1.5em;
+	}
+	#page-header {
+		padding: 0.8em 1em 0.4em;
+	}
+	#page-header .page-title, #page-header .archive-title {
+		font-size: 2.0em;
+	}
+	
+	/* Text Elements*/
+	.entry h1, .comment h1 {
+	font-size: 2.2em;
+	}
+	.entry h2, .comment h2 {
+		font-size: 1.8em;
+	}
+	.entry h3, .comment h3 {
+		font-size: 1.4em;
+	}
+	.entry tr th,
+	.entry thead th {
+		padding: 0.2em 0.4em;
+	}
+	.entry tr td {
+		padding: 0.2em 0.4em;
+	}
+
+}
+
+/* Smartphones | <480px */
+@media only screen and (max-width: 30em) {
+	.container {
+		width: 100%;
+	}
+	#custom-header, #frontpage-individual-image {
+		margin-top: -2em;
+	}
+	#page-header {
+		margin: 0 2em;
+		padding: 0.5em 0;
+	}
+	#page-header .page-title, #page-header .archive-title {
+		font-size: 1.5em;
+	}
+	.post-title {
+		font-size: 1.1em;
+		margin: 0.6em 1em;
+	}
+	.post-title-wrap .meta-date {
+		padding: 0.85em;
+	}
+	.alignright, .alignleft {
+		float: none;
+		margin: 1em 0;
+	}
+	#frontpage-intro .frontpage-intro-text, #frontpage-intro-button a {
+		font-size: 1.2em;
+	}
+}
+
+/* Smartphones | <320px */
+@media only screen and (max-width: 25em) {
+	.postmeta span, .postinfo span {
+		display: block;
+	}
+	.post-title {
+		display: block;
+		margin: 0.8em 1em;
+	}
+	.post-title a {
+		display: block;
+		padding: 0;
+	}
+	.post-title-wrap .meta-date {
+		display: block;
+		float: none;
+		padding: 0.6em 1em;
+	}
+	.postmeta .sep, .type-post .post-edit-link {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/* Big Screens Navi Fix | >720px */
+@media only screen and (min-width: 60em) {
+	/* ensure #nav is visible on desktop version */
+	#mainnav-menu {
+		display: block !important;
+	}
+}
